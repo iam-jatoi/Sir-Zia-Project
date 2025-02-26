@@ -7,7 +7,7 @@ from io import BytesIO
 
 
 # set up our App
-st.set_page_config(page_title = "Data Sweeper", layout = 'wide')
+st.set_page_config(page_title = "Data sweeper", layout = 'wide')
 st.title("Data Sweeper")
 st.write("Transform your files between CVS and Excel formats with built_in data cleaning and visualization!")
 
@@ -30,8 +30,8 @@ if uploaded_files:
             continue
 
         # Display info about the file
-        st.write(f"**📄File Name:** {file.name}")
-        st.write(f"**📏File Size:** {file.size/1024}")    
+        st.write(f"📄File Name: {file.name}")
+        st.write(f"📏File Size: {file.size/1024}")    
         
         # show of 5 rws of our df
         st.write("🔍 Preview of the Uploaded File:")
